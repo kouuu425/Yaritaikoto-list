@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>やりたいことリスト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="can">
+      <div class="can-lid">
+        <div class="brand-badge">
+          <span class="brand-sub">やりたいこと</span>
+          <span class="brand-main">じゃがりこ</span>
+          <span class="brand-flavor">サラダ味リスト</span>
+        </div>
+        <div class="stick-decor" aria-hidden="true">
+          <span class="stick"></span>
+          <span class="stick"></span>
+          <span class="stick"></span>
+          <span class="stick"></span>
+          <span class="stick"></span>
+        </div>
+      </div>
+
+      <div class="progress-panel">
+        <div class="progress-count">
+          <span id="doneCount">0</span><span class="progress-slash">/</span><span id="totalCount">0</span>
+          <span class="progress-label">個 達成！</span>
+        </div>
+        <div class="progress-bar-outer">
+          <div class="progress-bar-inner" id="progressBar"></div>
+        </div>
+        <div class="progress-percent"><span id="progressPercent">0</span>%</div>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="active">まだ</button>
+        <button class="filter-btn" data-filter="done">達成済み</button>
+      </div>
+
+      <ul class="todo-list" id="todoList"></ul>
+    </div>
+    <p class="footnote">🥔 タップしてチェック・未チェックを切り替えられます</p>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
