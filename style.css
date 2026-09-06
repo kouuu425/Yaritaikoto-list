@@ -170,6 +170,46 @@ body {
   color: var(--jaga-brown);
 }
 
+.add-form {
+  display: flex;
+  gap: 8px;
+  padding: 4px 16px 14px;
+  background: var(--jaga-cream);
+}
+
+.add-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 2px solid var(--jaga-green-dark);
+  background: #fff;
+  font-size: 14px;
+  font-family: inherit;
+  color: #2b2b2b;
+}
+
+.add-input:focus {
+  outline: none;
+  border-color: var(--jaga-orange);
+}
+
+.add-btn {
+  flex: 0 0 auto;
+  border: 2px solid var(--jaga-brown);
+  background: linear-gradient(180deg, var(--jaga-orange), #e07c00);
+  color: #fff;
+  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-btn:active {
+  transform: translateY(1px);
+}
+
 .filter-bar {
   display: flex;
   gap: 8px;
@@ -256,6 +296,24 @@ body {
 .todo-item.done .todo-text {
   color: #6b8f6a;
   text-decoration: line-through;
+}
+
+.todo-delete {
+  flex: 0 0 auto;
+  margin-left: auto;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: transparent;
+  color: #c98b3a;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.todo-delete:hover {
+  color: var(--jaga-red);
 }
 
 .todo-list.hide-done .todo-item.done {
